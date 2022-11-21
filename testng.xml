@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/meghav/applications/SeleniumWithFramework">
+        <classes>
+            <class name="Test.AmazonAssignment">
+                <methods>
+                    <include name="Amazon"/>
+                </methods>
+            </class>
+<!--            <class name="Test.TestCases">-->
+<!--                <methods>-->
+<!--                    <include name="LoginToApplication"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,5 @@
+Page Factory is a way to initialize the web elements you want to interact with within the page object when you create an instance of it
+
+Constuctor - it's the first method to execute when initializing the class
+
+this is used for initialization
