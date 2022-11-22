@@ -24,7 +24,7 @@ public class SearchMobiles extends AbstactComponents {
     @FindBy(id = "nav-search-submit-button")
     WebElement search;
 
-    @FindBy(css = "div[class*=s-matching-dir]>div > span:nth-child(2)>div[class*=s-main-slot] > div:nth-child(15)>div>div>div>div>div>div>div>div>div>div:nth-child(2)>div")
+    @FindBy(css = "div[class*=s-matching-dir]>div > span:nth-child(2)>div[class*=s-main-slot] > div:nth-child(10)>div>div>div>div>div>div>div>div>div>div:nth-child(2)>div")
     WebElement Lastmobile;
 
     @FindBy(id = "add-to-cart-button")
@@ -42,13 +42,13 @@ public class SearchMobiles extends AbstactComponents {
 
     public Orders LastMobile() {
         Lastmobile.click();
-        Set<String> window = driver.getWindowHandles();
-        Iterator<String> it= window.iterator();
-        String parentId = it.next();
-        String childId = it.next();
-        driver.switchTo().window(childId);
-        addToCart.click();
-        driver.switchTo().window(parentId);
+//        Set<String> window = driver.getWindowHandles();
+//        Iterator<String> it= window.iterator();
+//        String parentId = it.next();
+//        String childId = it.next();
+//        driver.switchTo().window(childId);
+//        addToCart.click();
+//        driver.switchTo().window(parentId);
         Orders order = new Orders(driver);
         return order;
     }
