@@ -23,7 +23,7 @@ public class Assignment {
         driver.findElement(By.id("nav-link-accountList")).click();
         driver.findElement(By.id("ap_email")).sendKeys("meghana.vemula@zemosolabs.com");
         driver.findElement(By.id("continue")).click();
-        driver.findElement(By.id("ap_password")).sendKeys("meghana@789");
+        driver.findElement(By.id("ap_password")).sendKeys("Gunni@789");
         driver.findElement(By.id("signInSubmit")).click();
         driver.findElement(By.xpath("//a[@href='/deals?ref_=nav_cs_gb']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[aria-label='Shop collections']")));
