@@ -9,7 +9,7 @@ public class AmazonAssignment extends BaseTest {
 
     @Test
     public void Amazon() throws InterruptedException {
-        TodaysDeals todaysDeals = login.LoginApplication("meghana.vemula@zemosolabs.com", "meghana@789");
+        TodaysDeals todaysDeals = login.LoginApplication("meghana.vemula@zemosolabs.com", "Gunni@789");
         SearchMobiles searchMobiles = todaysDeals.Deals();
         searchMobiles.Search("Mobiles");
         searchMobiles.Scroll();

@@ -24,10 +24,10 @@ public class BaseTest {
         String browserName = properties.getProperty("browser");
         if(browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-//            driver = new ChromeDriver();
-            ChromeOptions ChromeOptions = new ChromeOptions();
-        ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
-        driver = new ChromeDriver(ChromeOptions);
+            driver = new ChromeDriver();
+//            ChromeOptions ChromeOptions = new ChromeOptions();
+//        ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+//        driver = new ChromeDriver(ChromeOptions);
 
         }
         else if (browserName.equalsIgnoreCase("firefox")){
