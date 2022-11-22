@@ -46,13 +46,10 @@ public class Login extends AbstactComponents {
         submit.click();
         TodaysDeals todaysDeals = new TodaysDeals(driver);
         return todaysDeals;
-
     }
     public WebElement LoginName(){
         return loginName;
     }
 //   Assert.assertEquals(loginName.getText(), "Hello, meghana");
-
-
 
 }
