@@ -1,6 +1,7 @@
 package PageObjects;
 
 import AbstractComponents.AbstactComponents;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,10 +39,13 @@ public class Login extends AbstactComponents {
 
     }
 
+    By products = By.xpath("ap_password");
+
     public TodaysDeals LoginApplication(String email, String password){
         signin.click();
         userEmail.sendKeys(email);
         emailContinue.click();
+        waits(driver.findElement(products));
         loginpassword.sendKeys(password);
         submit.click();
         TodaysDeals todaysDeals = new TodaysDeals(driver);
