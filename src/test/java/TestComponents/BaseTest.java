@@ -18,7 +18,7 @@ public class BaseTest {
 
     public static WebDriver InitializeDriver() throws IOException {
         Properties properties = new Properties();
-        FileInputStream fis = new FileInputStream("/home/meghav/Meghana/SeleniumWithTestNG/SeleniumWithFramework/src/test/java/frameworks/resources/Globaldata.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/frameworks/resources/Globaldata.properties");
         properties.load(fis);
         String browserName = properties.getProperty("browser");
         if(browserName.equalsIgnoreCase("chrome")) {
